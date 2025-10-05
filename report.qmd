@@ -220,7 +220,7 @@ $$
 
 The objective of this study is to investigate the behavior of the bandwidth parameter $h_{\text{AMISE}}$ and the optimal number of blocks $N_{\text{opt}}$, selected via Mallows’ $C_p$ criterion, in a nonparametric regression framework where the regression function is nonlinear and the covariate follows a Beta distribution.
 
-More precisely, the simulation study aims to assess how both model parameters and hyperparameters influence the estimation process. The model parameters include the regression function $m(x) = \sin\big((x^3/3 + 0.1)^{-1}\big)$ and the error variance $\sigma^2$. The hyperparameters correspond to the methodological and design choices that affect the estimator’s behavior, namely the bandwidth $h$, the number of blocks $N$, and the shape parameters $\alpha$ and $\beta$ of the Beta distribution $X \sim \mathrm{Beta}(\alpha, \beta)$, which determines the design density of the covariate $X$. Through this analysis, we seek to understand how these quantities jointly affect the bias–variance trade-off and the resulting optimal smoothing level in nonparametric estimation.
+More precisely, the simulation study aims to assess how both model parameters and hyperparameters influence the estimation process. The model parameters include the regression function $m(x)$ and the error variance $\sigma^2$. The hyperparameters correspond to the methodological and design choices that affect the estimator’s behavior, namely the bandwidth $h$, the number of blocks $N$, and the shape parameters $\alpha$, $\beta$ of the Beta distribution $X \sim \mathrm{Beta}(\alpha, \beta)$, which determines the design density of the covariate $X$. Through this analysis, we seek to understand how these quantities jointly affect the bias–variance trade-off and the resulting optimal smoothing level in nonparametric estimation.
 
 ------------------------------------------------------------------------
 
@@ -232,8 +232,6 @@ $$
 Y = m(X) + \varepsilon,
 \qquad
 m(x) = \sin\!\big((x/3 + 0.1)^{-1}\big),
-\qquad
-X \sim \mathrm{Beta}(\alpha, \beta),
 \qquad
 \varepsilon \sim \mathcal{N}(0, \sigma^2).
 $$
